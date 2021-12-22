@@ -54,3 +54,55 @@ header {
     float: left;
     max-width: 50px;
 }
+
+.caja1 {
+    padding: 20px;
+    border: 4px;
+    color: rgb(27, 25, 25);
+    background-color: rgb(226, 226, 121);
+}
+
+.caja2 {
+    padding: 20px;
+    border: 4px;
+    color: rgb(27, 25, 25);
+    background-color: rgb(226, 226, 121);
+}
+
+.caja1 {
+    grid-area: caja1;
+}
+
+.caja2 {
+    grid-area: caja2;
+}
+
+.footer {
+    background-color: sandybrown;
+    color: rgb(27, 25, 25);
+    grid-area: footer;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.img {
+    float: right;
+    max-width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        gap: 0.7rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "header header header" "contenido contenido contenido" "sidebar sidebar sidebar" "caja1 caja2 caja2" "footer footer footer";
+    }
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
